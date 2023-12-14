@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Document settings
+\geometry{a4paper, margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Root Cause Analysis Report}
+\lhead{\leftmark}
+\rfoot{Page \thepage}
+
+% Custom section formatting
+\titleformat{\section}
+{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+% Begin document
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+   \centering
+   \vspace*{60px}
+   \Huge\textbf{Root Cause Analysis Report}\\
+   \vspace{20px}
+   \LARGE{$title$}\\ % Project Name
+   \vspace{10px}
+   \Large{$date$}\\ % Date
+   \vfill
+   \Large{Prepared by: $author$}\\ % Your Name/Team
+   \Large{Organization: $organization$} % Your Organization
+   \vspace{50px}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+$body$
+
+\end{document}
